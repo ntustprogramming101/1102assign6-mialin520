@@ -10,11 +10,11 @@ class Cabbage extends Item {
 
   void checkCollision(Player player) {
     if (isAlive&&isHit(x, y, w, h, player.x, player.y, player.w, player.h)){
-     isAlive = false;
+      isAlive = false;
       if(player.health < player.PLAYER_MAX_HEALTH) {
       player.health ++;
          }
-        
+         
     }
   }
 
